@@ -1,0 +1,29 @@
+<div class="first">
+<p class="list1">Your Cart List</p>
+</div>
+<div class="list1">
+    <button class="list" routerLink="/furnitures">View Furniture Collections</button>
+</div>
+<mat-card *ngFor = "let furnitures of productDetails" class="cards">
+    
+
+    <div class="name1">
+        <mat-card-title class="name">{{furnitures.fur_Name}}</mat-card-title>
+        </div>
+        <div class="cName1"> 
+        <mat-card-title class="cName">Comapany Name  :{{furnitures.fur_CompanyName}}</mat-card-title>
+        </div>
+        <div class="price1">
+        <mat-card-title class="price">Product Price  :{{furnitures.fur_price}}</mat-card-title>
+        </div>
+        <div class="fSize1">
+        <mat-card-title class="fSize">King Size  :{{furnitures.fur_kingSize}}</mat-card-title>
+        </div>
+        <div class="QSize1">
+            <mat-card-title class="QSize">Queen Size  :{{furnitures.fur_QueenSize}}</mat-card-title>
+        </div>
+        
+    <div class="but2">
+    <button class="button" (click)="deleteProduct(furnitures.id)">Delete</button>
+    </div>
+</mat-card>

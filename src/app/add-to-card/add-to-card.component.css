@@ -1,0 +1,100 @@
+p{
+    
+    margin-bottom: 60px;
+    text-align: center;
+    color: rgb(1, 1, 19);
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+}
+.first
+{
+    margin-top: 60px;
+}
+.cards
+{
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 700px;
+    height: 150px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 400px;
+    background-color: rgb(75, 2, 58);
+}
+
+.button{
+    margin-left: 400px;
+    border: 1px solid white;
+    border-radius: 30px;
+    width: 150px;
+    height: 25px;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;     
+}
+
+.but2
+{
+    margin-left:100px;
+    margin-top:-90px;
+}
+.list
+{
+    margin-left: 900px;
+    border: 1px solid white;
+    border-radius: 34px;
+    width: 300px;
+    height: 40px;
+    font-size: 21px;
+    font-family:'Times New Roman', Times, serif;
+    background-color:lawngreen;
+}
+.list1
+{
+    margin-top: -40px;
+}
+.name{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.cName{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 40px;
+}
+.price{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 60px;
+    color: rgb(9, 248, 104);
+}
+.fSize{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.QSize{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-left: 60px;
+}
+.fSize1
+{
+    margin-top: -3px;
+}
+.QSize1
+{
+    margin-top: -5px;
+}
+.name1
+{
+    margin-top:-13px;
+}
+.cName1
+{
+    margin-top: -20px;
+}
+.price1
+{
+    margin-top: -20px;
+}

@@ -1,0 +1,42 @@
+.homepage{
+    margin-left:auto;
+    margin-right:auto; 
+    text-align: center;  
+}
+.heading{
+  
+   padding: 80px;
+    font-size:70px;
+    color:rgb(1, 1, 33);
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  .user{
+    font-size: 90px;
+    margin-left: -400px;
+    margin-top: 50px;
+    color: rgb(1, 1, 19);
+  }
+  .user_heading{
+    font-size: 40px;
+    margin-left: 5px;
+    margin-top: -23px;
+    color: rgb(1, 1, 19);
+    font-family:'Times New Roman', Times, serif;
+  }
+  .admin{
+    font-size: 90px;
+    margin-left: -400px;
+    margin-top: 50px;
+    color: rgb(1, 1, 19);
+  }
+  .admin_heading{
+    font-size: 40px;
+    margin-left:40px;
+    margin-top: -25px;
+    color: rgb(1, 1, 19);
+    font-family:'Times New Roman', Times, serif;
+  }
+  a{
+    text-decoration: none; 
+    color:rgb(1, 1, 19);
+  }

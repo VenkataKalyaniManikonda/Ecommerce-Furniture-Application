@@ -1,0 +1,54 @@
+
+<h1>Add  New Product</h1>
+<form  [formGroup]="productData"   id="form">
+    <div class="form-group" >
+        <label>Furniture Id :</label>
+        <input type="number" class="form-control" formControlName="fur_Id" required/>
+    </div>
+    
+    <div *ngIf="fur_Id.invalid && (fur_Id.dirty || fur_Id.touched)" class="alert alert-danger" >
+        Furniture  Id is Mandatory
+    </div>
+
+    <div class="form-group" >
+        <label>Furniture Name:</label>
+        <input type="text" class="form-control" formControlName="fur_Name" required/>
+    </div>
+    <div *ngIf="fur_Name.invalid && (fur_Name.dirty || fur_Name.touched)" class="alert alert-danger">
+        Furniture Name is Mandatory
+    </div>
+
+    <div class="form-group" >
+        <label>Comapany Name :</label>
+        <input type="text" class="form-control" formControlName="fur_CompanyName" required/>
+    </div>
+    <div *ngIf="fur_CompanyName.invalid && (fur_CompanyName.dirty || fur_CompanyName.touched)" class="alert alert-danger">
+        Comapany Name is Mandatory
+    </div>
+
+    <div class="form-group" >
+        <label>Furniture Price :</label>
+        <input type="number" class="form-control" formControlName="fur_price" required/>
+    </div>
+    <div *ngIf="fur_price.invalid && (fur_price.dirty || fur_price.touched)" class="alert alert-danger">
+        Furniture  Prise is Mandatory
+    </div>
+
+    <div class="form-group" >
+        <label>King Size :</label>
+        <input type="text" class="form-control" formControlName="fur_kingSize" required/>
+    </div>
+    <div *ngIf="fur_kingSize.invalid && (fur_kingSize.dirty || fur_kingSize.touched)" class="alert alert-danger">
+        King size is Mandatory
+    </div>
+
+    <div class="form-group" >
+        <label>Queen Size :</label>
+        <input type="text" class="form-control" formControlName="fur_QueenSize" required/>
+    </div>
+    <div *ngIf="fur_QueenSize.invalid && (fur_QueenSize.dirty || fur_QueenSize.touched)" class="alert alert-danger">
+        queen Size is Mandatory
+    </div>
+    <button  type="submit" class="update" (click)="updateFurniture(productData.value,productData.value.fur_Id)">Update</button>
+</form>
+

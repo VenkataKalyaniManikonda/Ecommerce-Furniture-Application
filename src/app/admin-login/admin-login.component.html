@@ -1,0 +1,25 @@
+<h1>Admin Login Form</h1>
+
+<form  #loginForm="ngForm" id="form">
+
+    <p class="heading2">Please Enter Your Details </p>
+
+    <mat-form-field >
+        <input matInput placeholder="Admin Name" [(ngModel)]="adminDetails.adminName" name="adminName"  #adminName="ngModel" required style="color:white">
+    </mat-form-field>
+    <div *ngIf="adminName.invalid && (adminName.dirty || adminName.touched)" class="alert alert-danger"  style="width: 340px; margin-top: -15px; height: 30px; line-height: 0px;">
+        Admin  Name  Is Mandatory
+    </div>
+    <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]="adminDetails.adminPassword" name="adminPassword"  #adminPassword="ngModel" required style="color:white">
+    </mat-form-field>
+    <div *ngIf="adminPassword.invalid && (adminPassword.dirty ||adminPassword.touched)" class="alert alert-danger" style="width: 340px; margin-top: -15px; height: 30px; line-height: 0px;">
+        Password is Mandatory
+    </div>
+    
+    <button [disabled] = "!loginForm.form.valid" type="submit" style="margin-left: 5px;" (click)="adminLogin()">Login</button>
+    <button  type="submit" style="margin-left: 370px;" (click)="homepage()">Home Page</button>
+
+</form>
+
+<!-- (click)="userLogin()" -->

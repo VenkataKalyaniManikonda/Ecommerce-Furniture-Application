@@ -1,0 +1,78 @@
+#form
+{
+    border: 1px solid #000000;
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #090532;
+    margin-top: -30px;
+}
+h1
+{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: rgb(1, 1, 19);
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+}
+.submit
+{
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    color: black;
+    background-color:crimson;
+    width: 100px;
+    height:30px;
+
+}
+label
+{
+    color:aliceblue;
+}
+.update{
+    margin-top: 10px;
+    border: 1px solid #000000;
+    border-radius: 30px;
+    color: black;
+    background-color:crimson;
+    width: 100px;
+    height:30px;
+    margin-left: 40px;
+
+}
+/* #form>mat-form-field
+{
+    display: block;
+    color: black;
+
+}
+
+
+
+.heading2{
+    color: aliceblue;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -20px;
+}
+button
+{
+    margin-top: 1px;
+    padding: 4px;
+    border: 1px solid;
+    color:crimson;
+    border-radius: 6px;
+    width: 100px;
+   background-color: rgba(0, 0, 0, 0.315);
+}
+.data
+{
+    width: 340px;
+    color: black;
+} */
+

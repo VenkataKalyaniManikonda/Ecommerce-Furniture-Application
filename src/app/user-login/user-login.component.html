@@ -1,0 +1,26 @@
+
+<h1>User Login Form</h1>
+
+<form  #loginForm="ngForm" id="form">
+
+    <p class="heading2">Please Enter Your Details </p>
+
+    <mat-form-field >
+        <input matInput placeholder="User Mail" [(ngModel)]=" userLogin.userEmail" name="userEmail"  #userEmail="ngModel" required style="color:white">
+    </mat-form-field>
+    <div *ngIf="userEmail.invalid && (userEmail.dirty || userEmail.touched)" class="alert alert-danger"  style="width: 340px; margin-top: -15px; height: 30px; line-height: 0px;">
+        User Mail Is Mandatory
+    </div>
+    
+
+    <mat-form-field>
+        <input matInput type="password" placeholder="Password" [(ngModel)]=" userLogin.userPassWord" name="userPassWord"  #userPassWord="ngModel" required style="color:white">
+    </mat-form-field>
+    <div *ngIf="userPassWord.invalid && (userPassWord.dirty ||userPassWord.touched)" class="alert alert-danger" style="width: 340px; margin-top: -15px; height: 30px; line-height: 0px;">
+        Password is Mandatory
+    </div>
+    
+    <button [disabled] = "!loginForm.form.valid" type="submit" style="margin-left: 5px;" (click)="login()">Login</button>
+    <button  type="submit" style="margin-left: 350px;" (click)="register()">Register</button>
+</form>
+
